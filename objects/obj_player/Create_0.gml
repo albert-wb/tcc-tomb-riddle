@@ -17,3 +17,8 @@ dcc = 0.3;
 jump_height = 6;
 coyote_time = 0;
 coyote_time_max = 10;
+
+x_scale = 1;
+y_scale = 1;
+
+state = player_state_free;
