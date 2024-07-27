@@ -31,9 +31,9 @@ function player_state_free(){
 	}else{
 		coyote_time--;
 		if (vspd < 0){
-			sprite_index = spr_player_idle; //sprite pulando
+			sprite_index = spr_player_jump; //sprite pulando
 		} else {
-			sprite_index = spr_player_idle; //sprite caindo
+			sprite_index = spr_player_fall; //sprite caindo
 		}
 	}
 
