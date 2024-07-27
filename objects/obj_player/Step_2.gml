@@ -15,7 +15,7 @@ repeat(abs(hspd)){
 	
 	if(place_meeting(x+sign(hspd),y,obj_wall)){
 		hspd = 0;
-		sprite_index = spr_player_idle;
+		//sprite_index = spr_player_idle; - colidir com a parede, muda pra sprite parado
 		break;
 	} else {
 		x += sign(hspd);
