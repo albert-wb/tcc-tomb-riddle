@@ -1,8 +1,9 @@
 function player_state_free(){
 	// Verifica se as teclas de movimento são pressionadas
-	var key_left = keyboard_check(vk_left);
-	var key_right = keyboard_check(vk_right);
-	var key_up = keyboard_check_pressed(vk_up);
+	var key_left = keyboard_check(ord("A"));
+	var key_right = keyboard_check(ord("D"));
+	var key_up = keyboard_check_pressed(vk_space) || keyboard_check(ord("W"));
+	var key_dash = keyboard_check_pressed(ord("Z"));
 
 	// Calcula se há movimento horizontal
 	var move = key_right - key_left != 0;
@@ -43,6 +44,7 @@ function player_state_free(){
 
 	// Se o jogador está no chão
 	if(ground){
+		jump_count = jump_max;
 		// Reseta o tempo de coyote (permite pulo após deixar o chão por um curto período)
 		coyote_time = coyote_time_max;
 	}else{
@@ -57,7 +59,8 @@ function player_state_free(){
 	}
 
 	// Se a tecla de pulo é pressionada e o tempo de coyote é positivo
-	if(key_up and coyote_time > 0){
+	if(key_up and coyote_time > 0 || key_up and jump_count > 0){
+		jump_count--;
 		// Reseta o tempo de coyote
 		coyote_time = 0;
 		// Reseta e aplica a velocidade de pulo
@@ -68,7 +71,9 @@ function player_state_free(){
 	// Se o jogador está colidindo com uma parede e não está no chão
 	if(wall and !ground){
 		if(vspd > 1){
+			jump_count = jump_max;
 			// Define a velocidade vertical ao deslizar na parede
+			sprite_index = spr_player_slide_vertical;
 			vspd = 1;
 		}
 		// Se a tecla de pulo é pressionada enquanto na parede
@@ -80,6 +85,31 @@ function player_state_free(){
 			// Temporariamente impede movimento horizontal e aplica força horizontal para o lado oposto
 			can_move = 5;
 			hspd -= 4 * x_scale;
+			if (hspd < 0){
+				move_dir = 180;
+			}else if (hspd > 0){
+				move_dir = 0;
+			}
 		}
+	}
+	
+	if(key_dash and dash){
+		hspd = 0;
+		vspd = 0;
+		dash_time = 0;
+		dash = false;
+		alarm[0] = dash_delay;
+		sprite_index = spr_player_dash;
+		state = player_state_dash ;
+	}
+	
+}
+
+function player_state_dash(){
+	//estado de dash
+	hspd = lengthdir_x(dash_force,move_dir);
+	dash_time = approach(dash_time,dash_distance,1);
+	if(dash_time >= dash_distance){
+		state = player_state_free;
 	}
 }
