@@ -2,7 +2,7 @@ function player_state_free(){
 	// Verifica se as teclas de movimento são pressionadas
 	var key_left = keyboard_check(ord("A")); // Tecla esquerda
 	var key_right = keyboard_check(ord("D")); // Tecla direita
-	var key_up = keyboard_check_pressed(vk_space) || keyboard_check(ord("W")); // Tecla de pulo
+	var key_up = keyboard_check_pressed(vk_space) // Tecla de pulo
 	var key_dash = keyboard_check_pressed(ord("Z")); // Tecla de dash
 
 	// Calcula se há movimento horizontal
