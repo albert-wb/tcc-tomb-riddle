@@ -105,6 +105,8 @@ function player_state_free(){
 	}
 	
 	if (mouse_check_button(mb_left)){
+		attack_count +=1;
+		show_debug_message(attack_count)
 		if(mouse_x < x) x_scale = -1; else x_scale = 1;
 		image_index = 0;
 		state = player_state_atk;
@@ -129,7 +131,19 @@ function player_state_atk(){
 	}
 	
 	//estado de ataque
-	sprite_index = spr_player_attack_3;
+	if(attack_count = 1){
+		sprite_index = spr_player_attack_1;
+	} else if (attack_count = 2){
+		sprite_index = spr_player_attack_2;
+	} else if (attack_count = 3){
+		sprite_index = spr_player_attack_3;
+	} else {
+		attack_count = 1;
+	}
+
+	hspd = 0; //desacelera
+	vspd += 0.2; //muda a gravidade para queda depois de atacar
+	
 	if(image_index >= image_number - 1){
 		//saindo do estado de ataque
 		state = player_state_free;

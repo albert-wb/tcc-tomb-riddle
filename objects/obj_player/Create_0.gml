@@ -31,4 +31,6 @@ dash_distance = 10;
 x_scale = 1;
 y_scale = 1;
 
+attack_count = 0;
+
 state = player_state_free;
