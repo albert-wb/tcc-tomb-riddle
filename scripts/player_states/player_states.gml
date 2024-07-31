@@ -105,6 +105,8 @@ function player_state_free(){
 	}
 	
 	if (mouse_check_button(mb_left)){
+		if(mouse_x < x) x_scale = -1; else x_scale = 1;
+		image_index = 0;
 		state = player_state_atk;
 	}
 }
@@ -119,7 +121,20 @@ function player_state_dash(){
 }
 
 function player_state_atk(){
-	//estado de ataque
-	sprite_index = spr_player_attack_1;
+	if(image_index > 3){
+		if(!instance_exists(obj_hitbox)){
+			//pode criar hitbox
+			instance_create_layer(x + (25 * x_scale), y, layer, obj_hitbox);
+		}
+	}
 	
+	//estado de ataque
+	sprite_index = spr_player_attack_3;
+	if(image_index >= image_number - 1){
+		//saindo do estado de ataque
+		state = player_state_free;
+			if(instance_exists(obj_hitbox)){
+				instance_destroy(obj_hitbox);
+		}
+	}
 }
