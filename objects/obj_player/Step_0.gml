@@ -1,1 +1,2 @@
+event_inherited();
 state();

@@ -8,10 +8,6 @@ function player_state_free(){
 	// Calcula se há movimento horizontal
 	var move = key_right - key_left != 0; // Verifica se o jogador está se movendo para a esquerda ou direita
 
-	// Aplica a gravidade ao jogador
-	vspd += grv; // Aumenta a velocidade vertical pela gravidade
-	vspd = clamp(vspd, vspd_min, vspd_max); // Limita a velocidade vertical entre valores mínimo e máximo
-
 	// Se houver movimento horizontal
 	if(move){
 		// Define o sprite de caminhada

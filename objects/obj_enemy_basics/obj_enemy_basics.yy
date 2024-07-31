@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo_pai",
-  "eventList":[],
+  "%Name":"obj_enemy_basics",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_inimigo_pai",
+  "name":"obj_enemy_basics",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_player_idle",
+    "path":"sprites/spr_player_idle/spr_player_idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

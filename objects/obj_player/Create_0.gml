@@ -1,13 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-hspd = 0;
-vspd = 0;
-vspd_min = -7;
-vspd_max = 6;
 
-grv = 0.3;
+event_inherited();
 
-move_dir = 0;
 move_spd = 0;
 move_spd_max = 3;
 
@@ -27,9 +22,6 @@ dash_delay = 30;
 dash_force = 8;
 dash_time = 0;
 dash_distance = 10;
-
-x_scale = 1;
-y_scale = 1;
 
 attack_count = 0;
 
