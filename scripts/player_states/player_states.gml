@@ -103,6 +103,10 @@ function player_state_free(){
 		sprite_index = spr_player_dash; // Define o sprite de dash
 		state = player_state_dash; // Muda para o estado de dash
 	}
+	
+	if (mouse_check_button(mb_left)){
+		state = player_state_atk;
+	}
 }
 
 function player_state_dash(){
@@ -112,4 +116,10 @@ function player_state_dash(){
 	if(dash_time >= dash_distance){
 		state = player_state_free; // Retorna ao estado livre após completar o dash
 	}
+}
+
+function player_state_atk(){
+	//estado de ataque
+	sprite_index = spr_player_attack_1;
+	
 }
