@@ -2,7 +2,7 @@ function player_state_free(){
 	// Verifica se as teclas de movimento são pressionadas
 	var key_left = keyboard_check(ord("A")); // Tecla esquerda
 	var key_right = keyboard_check(ord("D")); // Tecla direita
-	var key_up = keyboard_check_pressed(vk_space) // Tecla de pulo
+	var key_up = keyboard_check_pressed(vk_space); // Tecla de pulo
 	var key_dash = keyboard_check_pressed(ord("Z")); // Tecla de dash
 
 	// Calcula se há movimento horizontal
@@ -100,12 +100,40 @@ function player_state_free(){
 		state = player_state_dash; // Muda para o estado de dash
 	}
 	
+	// Verifica se o botão esquerdo do mouse está pressionado
 	if (mouse_check_button(mb_left)){
-		attack_count +=1;
-		show_debug_message(attack_count)
-		if(mouse_x < x) x_scale = -1; else x_scale = 1;
-		image_index = 0;
-		state = player_state_atk;
+		attack_count += 1; // Incrementa o contador de ataques
+		show_debug_message(attack_count); // Exibe o contador de ataques no console de depuração
+		// Ajusta a escala do sprite com base na posição do mouse
+		if(mouse_x < x) x_scale = -1; else x_scale = 1; // Inverte a escala se o mouse está à esquerda
+		image_index = 0; // Reseta o índice da imagem do sprite
+		state = player_state_atk; // Muda para o estado de ataque
+	}
+	
+	// Verifica se há colisão com entidades
+	var collision_e = instance_place(x + hspd, y, obj_entities_pai);
+	
+	// Se houver colisão
+	if(collision_e){
+		hspd = 0; // Reseta a velocidade horizontal
+		vspd = 0; // Reseta a velocidade vertical
+		vspd -= 4; // Aplica uma pequena força para baixo
+		damage_dir = point_direction(collision_e.x, collision_e.y, x, y); // Calcula a direção do dano
+		state = player_state_damage; // Muda para o estado de dano
+	}
+}
+
+function player_state_damage(){
+	sprite_index = spr_player_idle; // Define o sprite de inatividade
+	hspd = lengthdir_x(4, damage_dir); // Aplica a velocidade na direção do dano
+	
+	damage_time = approach(damage_time, damage_distance, 1); // Aumenta o tempo de dano até a distância máxima
+	
+	// Se o tempo de dano atingir a distância máxima
+	if(damage_time >= damage_distance){
+		hspd = 0; // Reseta a velocidade horizontal
+		damage_time = 0; // Reseta o tempo de dano
+		state = player_state_free; // Retorna ao estado livre
 	}
 }
 
@@ -113,38 +141,41 @@ function player_state_dash(){
 	// Estado de dash
 	hspd = lengthdir_x(dash_force, move_dir); // Aplica a força do dash na direção do movimento
 	dash_time = approach(dash_time, dash_distance, 1); // Aumenta o tempo de dash até a distância máxima
+	// Se o tempo de dash atingir a distância máxima
 	if(dash_time >= dash_distance){
 		state = player_state_free; // Retorna ao estado livre após completar o dash
 	}
 }
 
 function player_state_atk(){
+	// Verifica se o índice da imagem do ataque está acima de 3
 	if(image_index > 3){
 		if(!instance_exists(obj_hitbox)){
-			//pode criar hitbox
+			// Cria a hitbox de ataque se não existir
 			instance_create_layer(x + (25 * x_scale), y, layer, obj_hitbox);
 		}
 	}
 	
-	//estado de ataque
-	if(attack_count = 1){
-		sprite_index = spr_player_attack_1;
-	} else if (attack_count = 2){
-		sprite_index = spr_player_attack_2;
-	} else if (attack_count = 3){
-		sprite_index = spr_player_attack_3;
+	// Estado de ataque
+	if(attack_count == 1){
+		sprite_index = spr_player_attack_1; // Define o sprite para o primeiro ataque
+	} else if (attack_count == 2){
+		sprite_index = spr_player_attack_2; // Define o sprite para o segundo ataque
+	} else if (attack_count == 3){
+		sprite_index = spr_player_attack_3; // Define o sprite para o terceiro ataque
 	} else {
-		attack_count = 1;
+		attack_count = 1; // Reseta o contador de ataques
 	}
 
-	hspd = 0; //desacelera
-	vspd += 0.2; //muda a gravidade para queda depois de atacar
+	hspd = 0; // Reseta a velocidade horizontal
+	vspd += 0.2; // Aplica uma pequena gravidade para queda após o ataque
 	
+	// Se o índice da imagem do ataque atingir o número máximo de imagens
 	if(image_index >= image_number - 1){
-		//saindo do estado de ataque
-		state = player_state_free;
-			if(instance_exists(obj_hitbox)){
-				instance_destroy(obj_hitbox);
+		// Sai do estado de ataque
+		state = player_state_free; // Retorna ao estado livre
+		if(instance_exists(obj_hitbox)){
+			instance_destroy(obj_hitbox); // Destrói a hitbox de ataque
 		}
 	}
 }

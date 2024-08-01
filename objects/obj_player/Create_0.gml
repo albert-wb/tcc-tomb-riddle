@@ -25,4 +25,8 @@ dash_distance = 10;
 
 attack_count = 0;
 
+damage_dir = 0;
+damage_time = 0;
+damage_distance = 10;
+
 state = player_state_free;

@@ -3,23 +3,12 @@ event_inherited();
 move_spd = 1.2;
 move_dir = 1;
 
-state_walk = function(){
-	sprite_index = spr_player_walking;
-	var ground = place_meeting(x,y+1,obj_wall);
-	
-	if(ground){
-		hspd = move_dir * move_spd;
-		if(hspd != 0) x_scale = sign(hspd);
-	}
-	
-	if(place_meeting(x+hspd,y,obj_wall)){
-		move_dir*=-1;
-	}
-	
-	if(!position_meeting(x+(20*move_dir),y+1, obj_wall)){
-		move_dir*=-1;
-	}
-	
-}
+atk_dir = 0;
+atk_time = 0;
+atk_distance = 20;
+
+
+
+life = 10;
 
 state = state_walk;
