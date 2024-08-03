@@ -9,8 +9,8 @@
   "name":"obj_wall_move_horizontal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"sólidos",
+    "path":"folders/Objetos/sólidos.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",
@@ -38,5 +38,5 @@
     "path":"sprites/spr_wall_move/spr_wall_move.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

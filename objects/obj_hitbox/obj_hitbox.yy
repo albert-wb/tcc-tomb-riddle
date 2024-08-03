@@ -8,8 +8,8 @@
   "name":"obj_hitbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"mechanics",
+    "path":"folders/Objetos/mechanics.yy",
   },
   "parentObjectId":null,
   "persistent":false,

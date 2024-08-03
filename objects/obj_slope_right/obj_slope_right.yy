@@ -6,8 +6,8 @@
   "name":"obj_slope_right",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"sólidos",
+    "path":"folders/Objetos/sólidos.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",
@@ -35,5 +35,5 @@
     "path":"sprites/spr_slope_right/spr_slope_right.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

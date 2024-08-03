@@ -11,8 +11,8 @@
   "name":"obj_entities_pai",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"entidades",
+    "path":"folders/Objetos/entidades.yy",
   },
   "parentObjectId":null,
   "persistent":false,

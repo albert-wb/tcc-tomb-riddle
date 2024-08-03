@@ -9,8 +9,8 @@
   "name":"obj_enemy_basics",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"entidades",
+    "path":"folders/Objetos/entidades.yy",
   },
   "parentObjectId":{
     "name":"obj_entities_pai",
@@ -34,9 +34,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle",
-    "path":"sprites/spr_player_idle/spr_player_idle.yy",
+    "name":"spr_enemy_01_idle",
+    "path":"sprites/spr_enemy_01_idle/spr_enemy_01_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_enemy_01_mask",
+    "path":"sprites/spr_enemy_01_mask/spr_enemy_01_mask.yy",
+  },
   "visible":true,
 }

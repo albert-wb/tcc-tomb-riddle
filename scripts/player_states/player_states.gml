@@ -114,7 +114,7 @@ function player_state_free(){
 	var collision_e = instance_place(x + hspd, y, obj_entities_pai);
 	
 	// Se houver colisão
-	if(collision_e){
+	if(collision_e and collision_e.x_scale != obj_player.x_scale){ //essa outra condição é pra colisão ser frontal, mas depois vamos tirar
 		hspd = 0; // Reseta a velocidade horizontal
 		vspd = 0; // Reseta a velocidade vertical
 		vspd -= 4; // Aplica uma pequena força para baixo
