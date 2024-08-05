@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_roma",
+  "%Name":"obj_ui",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_roma",
+  "name":"obj_ui",
   "overriddenProperties":[],
   "parent":{
-    "name":"coletaveis",
-    "path":"folders/Objetos/coletaveis.yy",
+    "name":"mechanics",
+    "path":"folders/Objetos/mechanics.yy",
   },
-  "parentObjectId":{
-    "name":"obj_pickup_parent",
-    "path":"objects/obj_pickup_parent/obj_pickup_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_roma",
-    "path":"sprites/spr_roma/spr_roma.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

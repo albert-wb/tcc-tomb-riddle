@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hitbox",
+  "%Name":"obj_lifebar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hitbox",
+  "name":"obj_lifebar",
   "overriddenProperties":[],
   "parent":{
     "name":"mechanics",
@@ -29,13 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_player_hitbox",
-    "path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",
-  },
-  "spriteMaskId":{
-    "name":"spr_player_hitbox",
-    "path":"sprites/spr_player_hitbox/spr_player_hitbox.yy",
-  },
-  "visible":false,
+  "spriteId":null,
+  "spriteMaskId":null,
+  "visible":true,
 }
