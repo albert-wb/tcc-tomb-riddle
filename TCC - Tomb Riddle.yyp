@@ -23,6 +23,7 @@
     {"$GMFolder":"","%Name":"entidades","folderPath":"folders/Objetos/entidades.yy","name":"entidades","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"mechanics","folderPath":"folders/Objetos/mechanics.yy","name":"mechanics","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"sólidos","folderPath":"folders/Objetos/sólidos.yy","name":"sólidos","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"WALL MOVE","folderPath":"folders/Objetos/sólidos/WALL MOVE.yy","name":"WALL MOVE","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"player states","folderPath":"folders/Scripts/player states.yy","name":"player states","resourceType":"GMFolder","resourceVersion":"2.0",},

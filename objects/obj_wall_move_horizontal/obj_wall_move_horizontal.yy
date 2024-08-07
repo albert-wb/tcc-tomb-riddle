@@ -9,8 +9,8 @@
   "name":"obj_wall_move_horizontal",
   "overriddenProperties":[],
   "parent":{
-    "name":"sólidos",
-    "path":"folders/Objetos/sólidos.yy",
+    "name":"WALL MOVE",
+    "path":"folders/Objetos/sólidos/WALL MOVE.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",
