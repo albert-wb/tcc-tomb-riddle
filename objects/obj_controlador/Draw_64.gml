@@ -1,0 +1,2 @@
+draw_vida();
+interface();

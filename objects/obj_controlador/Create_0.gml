@@ -15,3 +15,6 @@ color_1 = make_color_rgb(255, 0, 64); // Cor da barra de vida (vermelho)
 color_2 = make_color_rgb(19, 19, 19); // Cor do fundo da barra de vida (preto)
 color_3 = make_color_rgb(19, 19, 19); // Cor da borda da barra de vida (preto)
 color_4 = c_white; // Cor do feedback (branco)
+
+draw_vida = draw_lifebar;
+interface = draw_interface;
