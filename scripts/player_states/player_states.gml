@@ -131,7 +131,7 @@ function player_state_damage(){
 	
 	// Se o tempo de dano atingir a distância máxima
 	if(damage_time >= damage_distance){
-		obj_lifebar.life_hp-=10; //recebe 10 de dano
+		obj_controlador.life_hp-=10; //recebe 10 de dano
 		hspd = 0; // Reseta a velocidade horizontal
 		damage_time = 0; // Reseta o tempo de dano
 		state = player_state_free; // Retorna ao estado livre
@@ -149,34 +149,49 @@ function player_state_dash(){
 }
 
 function player_state_atk(){
-	// Verifica se o índice da imagem do ataque está acima de 3
-	if(image_index > 3){
-		if(!instance_exists(obj_hitbox)){
-			// Cria a hitbox de ataque se não existir
-			instance_create_layer(x + (25 * x_scale), y, layer, obj_hitbox);
-		}
-	}
-	
-	// Estado de ataque
-	if(attack_count == 1){
-		sprite_index = spr_player_attack_1; // Define o sprite para o primeiro ataque
-	} else if (attack_count == 2){
-		sprite_index = spr_player_attack_2; // Define o sprite para o segundo ataque
-	} else if (attack_count == 3){
-		sprite_index = spr_player_attack_3; // Define o sprite para o terceiro ataque
-	} else {
-		attack_count = 1; // Reseta o contador de ataques
-	}
+    // Verifica se o índice da imagem do ataque está acima de 3
+    if(image_index > 3){
+        if(!instance_exists(obj_hitbox)){
+            // Cria a hitbox de ataque se não existir
+            instance_create_layer(x + (25 * x_scale), y, layer, obj_hitbox);
+        }
+    }
+    
+    // Estado de ataque
+    if(attack_count == 1){
+        sprite_index = spr_player_attack_1; // Define o sprite para o primeiro ataque
+    } else if (attack_count == 2){
+        sprite_index = spr_player_attack_2; // Define o sprite para o segundo ataque
+    } else if (attack_count == 3){
+        sprite_index = spr_player_attack_3; // Define o sprite para o terceiro ataque
+    } else {
+        attack_count = 1; // Reseta o contador de ataques
+    }
 
-	hspd = 0; // Reseta a velocidade horizontal
-	vspd += 0.2; // Aplica uma pequena gravidade para queda após o ataque
-	
-	// Se o índice da imagem do ataque atingir o número máximo de imagens
-	if(image_index >= image_number - 1){
-		// Sai do estado de ataque
-		state = player_state_free; // Retorna ao estado livre
-		if(instance_exists(obj_hitbox)){
-			instance_destroy(obj_hitbox); // Destrói a hitbox de ataque
-		}
-	}
+    // Verifica se o jogador está no chão
+    var ground = place_meeting(x, y + 1, obj_wall); // Verifica colisão com o chão
+
+    // Se o jogador está no chão, reseta hspd
+    if (ground) {
+        hspd = 0; // Reseta a velocidade horizontal
+    } else {
+        // Se não estiver no chão, mantém a velocidade horizontal
+        if (keyboard_check(ord("A")) || keyboard_check(ord("D"))) {
+            // Se a tecla esquerda ou direita estiver pressionada, mantenha a velocidade
+            hspd = lengthdir_x(move_spd, move_dir); // Calcula a velocidade com base na direção do movimento
+        } else {
+            // Se não houver movimento, aplique desaceleração
+            hspd = approach(hspd, 0, 0.5); // Diminui gradualmente a velocidade horizontal
+        }
+    }
+    vspd += 0.2; // Aplica uma pequena gravidade para queda após o ataque
+
+    // Se o índice da imagem do ataque atingir o número máximo de imagens
+    if(image_index >= image_number - 1){
+        // Sai do estado de ataque
+        state = player_state_free; // Retorna ao estado livre
+        if(instance_exists(obj_hitbox)){
+            instance_destroy(obj_hitbox); // Destrói a hitbox de ataque
+        }
+    }
 }

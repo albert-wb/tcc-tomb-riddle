@@ -3,7 +3,7 @@
 if (state == 0){
 	timer += 0.5;
 	if(timer >= duration){
-		room_goto(targetroom);
+		room_goto(targetroom)
 		state = 1;
 	}
 } else {

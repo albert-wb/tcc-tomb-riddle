@@ -33,6 +33,7 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"assets_sprites","folderPath":"folders/Sprites/assets_sprites.yy","name":"assets_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"blocos","folderPath":"folders/Sprites/blocos.yy","name":"blocos","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"interface","folderPath":"folders/Sprites/interface.yy","name":"interface","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"inimigos","folderPath":"folders/Sprites/inimigos.yy","name":"inimigos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"jogador","folderPath":"folders/Sprites/jogador.yy","name":"jogador","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"tilesets_sprites","folderPath":"folders/Sprites/tilesets_sprites.yy","name":"tilesets_sprites","resourceType":"GMFolder","resourceVersion":"2.0",},

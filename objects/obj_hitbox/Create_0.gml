@@ -30,3 +30,5 @@ if(c > 0){
         }
     }
 }
+
+x_offset = 25; // Distância horizontal em relação ao jogador

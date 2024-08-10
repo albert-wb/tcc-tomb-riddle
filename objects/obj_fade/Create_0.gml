@@ -3,8 +3,8 @@
 width = display_get_gui_width();
 height = display_get_gui_height();
 
-duration = 60;
-targetroom = chapter;
+duration = 30;
+targetroom = obj_next_room.next_lvl;
 color = c_black;
 
 timer = 0;
