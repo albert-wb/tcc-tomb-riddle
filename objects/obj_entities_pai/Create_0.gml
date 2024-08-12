@@ -8,3 +8,6 @@ move_dir = 0;
 
 x_scale = 1;
 y_scale = 1;
+
+alpha = 0;
+color = c_white;
