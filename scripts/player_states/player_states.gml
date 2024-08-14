@@ -111,7 +111,7 @@ function player_state_free(){
 	}
 	
 	// Verifica se há colisão com entidades
-	var collision_e = instance_place(x + hspd, y, obj_entities_pai);
+	var collision_e = instance_place(x + hspd, y, (obj_entities_pai));
 	
 	// Se houver colisão
 	if(collision_e and collision_e.x_scale != obj_player.x_scale){ //essa outra condição é pra colisão ser frontal, mas depois vamos tirar

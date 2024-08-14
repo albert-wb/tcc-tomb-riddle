@@ -9,6 +9,6 @@ atk_distance = 20;
 
 
 
-life = 10;
+life = 10; //vida do inimigo
 
 state = state_walk;
