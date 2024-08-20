@@ -52,6 +52,7 @@
   "name":"TCC - Tomb Riddle",
   "resources":[
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
+    {"id":{"name":"obj_bloco","path":"objects/obj_bloco/obj_bloco.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
     {"id":{"name":"obj_enemy_basics","path":"objects/obj_enemy_basics/obj_enemy_basics.yy",},},
