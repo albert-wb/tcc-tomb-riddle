@@ -6,8 +6,10 @@ height = display_get_gui_height();
 duration = 30;
 if (instance_exists(obj_next_room)){
 	targetroom = obj_next_room.next_lvl;
-} else {
+} else if(instance_exists(obj_cutscene_controller)) {
 	targetroom = capitulo_01;
+} else {
+	targetroom = rm_cutscenes;
 }
 
 color = c_black;

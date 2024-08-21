@@ -12,8 +12,8 @@
   "name":"obj_menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"interface",
-    "path":"folders/Objetos/interface.yy",
+    "name":"menu",
+    "path":"folders/Objetos/interface/menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
