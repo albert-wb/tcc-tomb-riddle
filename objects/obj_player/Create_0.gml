@@ -13,7 +13,7 @@ dcc = 0.3;
 
 jump_max = 2;
 jump_count = jump_max;
-jump_height = 5;
+jump_height = 4.5;
 coyote_time = 0;
 coyote_time_max = 10;
 
