@@ -4,7 +4,12 @@ width = display_get_gui_width();
 height = display_get_gui_height();
 
 duration = 30;
-targetroom = obj_next_room.next_lvl;
+if (instance_exists(obj_next_room)){
+	targetroom = obj_next_room.next_lvl;
+} else {
+	targetroom = capitulo_01;
+}
+
 color = c_black;
 
 timer = 0;
