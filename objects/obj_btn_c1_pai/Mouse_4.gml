@@ -1,5 +1,6 @@
 // Evento de clique do botão
 global.soma_next_room += soma_c1;
+var _proximaFase = instance_create_layer(736, 320, "colisao", obj_next_room);
 
 // Verifica se a soma é igual a um dos valores esperados
 if (global.soma_next_room == 7) {

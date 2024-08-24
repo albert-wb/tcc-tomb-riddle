@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"assets_sprites",
-    "path":"folders/Sprites/assets_sprites.yy",
+    "name":"coletáveis",
+    "path":"folders/Sprites/assets_sprites/coletáveis.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
