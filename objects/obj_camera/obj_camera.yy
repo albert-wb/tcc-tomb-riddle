@@ -11,8 +11,8 @@
   "name":"obj_camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"mechanics",
-    "path":"folders/Objetos/mechanics.yy",
+    "name":"interface",
+    "path":"folders/Objetos/interface.yy",
   },
   "parentObjectId":null,
   "persistent":false,

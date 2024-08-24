@@ -6,8 +6,8 @@
   "name":"obj_btn_c1",
   "overriddenProperties":[],
   "parent":{
-    "name":"mechanics",
-    "path":"folders/Objetos/mechanics.yy",
+    "name":"capitulo 1",
+    "path":"folders/Objetos/mechanics/capitulo 1.yy",
   },
   "parentObjectId":{
     "name":"obj_btn_c1_pai",

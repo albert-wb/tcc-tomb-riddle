@@ -69,7 +69,7 @@
     {"id":{"name":"obj_btn_sair","path":"objects/obj_btn_sair/obj_btn_sair.yy",},},
     {"id":{"name":"obj_btn_sobre","path":"objects/obj_btn_sobre/obj_btn_sobre.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
-    {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
+    {"id":{"name":"obj_controlador_draw","path":"objects/obj_controlador_draw/obj_controlador_draw.yy",},},
     {"id":{"name":"obj_cutscene_controller","path":"objects/obj_cutscene_controller/obj_cutscene_controller.yy",},},
     {"id":{"name":"obj_enemy_basics","path":"objects/obj_enemy_basics/obj_enemy_basics.yy",},},
     {"id":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},},

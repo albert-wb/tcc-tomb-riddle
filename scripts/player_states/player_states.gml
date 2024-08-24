@@ -131,7 +131,7 @@ function player_state_damage(){
 	
 	// Se o tempo de dano atingir a distância máxima
 	if(damage_time >= damage_distance){
-		obj_controlador.life_hp-=10; //recebe 10 de dano
+		obj_controlador_draw.life_hp-=10; //recebe 10 de dano
 		hspd = 0; // Reseta a velocidade horizontal
 		damage_time = 0; // Reseta o tempo de dano
 		state = player_state_free; // Retorna ao estado livre

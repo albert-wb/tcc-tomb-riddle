@@ -10,8 +10,8 @@
   "name":"obj_fade",
   "overriddenProperties":[],
   "parent":{
-    "name":"mechanics",
-    "path":"folders/Objetos/mechanics.yy",
+    "name":"interface",
+    "path":"folders/Objetos/interface.yy",
   },
   "parentObjectId":null,
   "persistent":true,
