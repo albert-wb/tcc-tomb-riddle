@@ -39,5 +39,5 @@
     "name":"prox_nvl",
     "path":"sprites/prox_nvl/prox_nvl.yy",
   },
-  "visible":false,
+  "visible":true,
 }
