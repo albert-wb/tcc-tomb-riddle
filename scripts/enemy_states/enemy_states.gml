@@ -27,6 +27,7 @@ function state_walk(){
 		vspd -= 4; // Aplica uma pequena força para cima
 		atk_dir = point_direction(collision_e.x, collision_e.y, x, y); // Calcula a direção do dano
 		state = enemy_state_damage; // Muda para o estado de dano
+		show_debug_message("Hitbox atingiu o inimigo e causou dano");
 	}
 	
 }

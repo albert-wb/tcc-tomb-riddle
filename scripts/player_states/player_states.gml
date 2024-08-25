@@ -103,7 +103,7 @@ function player_state_free(){
 	// Verifica se o botão esquerdo do mouse está pressionado
 	if (mouse_check_button(mb_left)){
 		attack_count += 1; // Incrementa o contador de ataques
-		show_debug_message(attack_count); // Exibe o contador de ataques no console de depuração
+		show_debug_message("sequência de ataque: " + string(attack_count)); // Exibe o contador de ataques no console de depuração
 		// Ajusta a escala do sprite com base na posição do mouse
 		if(mouse_x < x) x_scale = -1; else x_scale = 1; // Inverte a escala se o mouse está à esquerda
 		image_index = 0; // Reseta o índice da imagem do sprite
@@ -132,6 +132,7 @@ function player_state_damage(){
 	// Se o tempo de dano atingir a distância máxima
 	if(damage_time >= damage_distance){
 		obj_controlador_draw.life_hp-=10; //recebe 10 de dano
+		show_debug_message("vida atual: " + string(obj_controlador_draw.life_hp));
 		hspd = 0; // Reseta a velocidade horizontal
 		damage_time = 0; // Reseta o tempo de dano
 		state = player_state_free; // Retorna ao estado livre

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_btn_c1_amarelo",
-    "path":"sprites/spr_btn_c1_amarelo/spr_btn_c1_amarelo.yy",
+    "name":"alavanca_5fps",
+    "path":"sprites/alavanca_5fps/alavanca_5fps.yy",
   },
   "spriteMaskId":null,
   "visible":true,

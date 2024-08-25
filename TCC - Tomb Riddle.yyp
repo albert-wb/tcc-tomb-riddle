@@ -105,6 +105,7 @@
     {"id":{"name":"mecanicas","path":"scripts/mecanicas/mecanicas.yy",},},
     {"id":{"name":"player_states","path":"scripts/player_states/player_states.yy",},},
     {"id":{"name":"ui","path":"scripts/ui/ui.yy",},},
+    {"id":{"name":"alavanca_5fps","path":"sprites/alavanca_5fps/alavanca_5fps.yy",},},
     {"id":{"name":"botao_tijolo","path":"sprites/botao_tijolo/botao_tijolo.yy",},},
     {"id":{"name":"cutscene_01","path":"sprites/cutscene_01/cutscene_01.yy",},},
     {"id":{"name":"cutscene_02","path":"sprites/cutscene_02/cutscene_02.yy",},},
