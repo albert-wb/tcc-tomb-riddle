@@ -35,6 +35,7 @@ function draw_lifebar() {
         // Se a vida do jogador for menor ou igual a zero, destrói a instância do jogador
 		//cria a instancia do jogador morrendo
 		instance_destroy(obj_player);
+		room_restart();
     }
 
     // Restaura a cor de desenho padrão
@@ -47,7 +48,7 @@ function draw_interface(){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(fnt_ui);
-	draw_text(30,15,string(global.roma));
+	draw_text(35,15,string(global.roma));
 	draw_set_halign(-1);
 	draw_set_valign(-1);
 	draw_set_font(-1);
