@@ -1,2 +1,2 @@
 
-life = 10;
+life_vaso = life_max_vaso;

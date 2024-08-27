@@ -7,7 +7,11 @@
   ],
   "managed":true,
   "name":"obj_enemy_basics",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_RunSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_enemy_01_run","path":"sprites/spr_enemy_01_run/spr_enemy_01_run.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_enemy_01_run",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_IdleSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_enemy_01_idle","path":"sprites/spr_enemy_01_idle/spr_enemy_01_idle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_enemy_01_idle",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_AttackSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_enemy_01_atack1","path":"sprites/spr_enemy_01_atack1/spr_enemy_01_atack1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_enemy_01_atack1",},
+  ],
   "parent":{
     "name":"entidades",
     "path":"folders/Objetos/entidades.yy",

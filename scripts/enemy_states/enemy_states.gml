@@ -1,7 +1,7 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 function state_walk(){
-	sprite_index = spr_enemy_01_run;
+	sprite_index = spr_RunSt;
 	var ground = place_meeting(x,y+1,obj_wall);
 	
 	if(ground){
@@ -33,7 +33,7 @@ function state_walk(){
 }
 
 function enemy_state_damage(){
-	sprite_index = spr_enemy_01_idle; // Define o sprite de inatividade
+	sprite_index = spr_IdleSt; // Define o sprite de inatividade
 	hspd = lengthdir_x(4, atk_dir); // Aplica a velocidade na direção do dano
 	
 	atk_time = approach(atk_time, atk_distance, 1); // Aumenta o tempo de dano até a distância máxima

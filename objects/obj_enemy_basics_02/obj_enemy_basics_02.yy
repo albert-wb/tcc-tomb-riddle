@@ -7,7 +7,11 @@
   ],
   "managed":true,
   "name":"obj_enemy_basics_02",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_RunSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_escorpion_run","path":"sprites/spr_escorpion_run/spr_escorpion_run.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_escorpion_run",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_IdleSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_escorpion_iddle","path":"sprites/spr_escorpion_iddle/spr_escorpion_iddle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_escorpion_iddle",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_AttackSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"",},
+  ],
   "parent":{
     "name":"entidades",
     "path":"folders/Objetos/entidades.yy",

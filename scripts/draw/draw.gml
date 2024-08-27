@@ -33,7 +33,8 @@ function draw_lifebar() {
         draw_rectangle(x1, y1, x2_fixed, y2, true); // Desenha o retângulo da borda
     } else {
         // Se a vida do jogador for menor ou igual a zero, destrói a instância do jogador
-        instance_destroy(obj_player);
+		//cria a instancia do jogador morrendo
+		instance_destroy(obj_player);
     }
 
     // Restaura a cor de desenho padrão

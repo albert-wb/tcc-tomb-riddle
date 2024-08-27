@@ -1,3 +1,3 @@
-if(life <= 0){
+if(life_vaso <= 0){
 	instance_destroy();
 }

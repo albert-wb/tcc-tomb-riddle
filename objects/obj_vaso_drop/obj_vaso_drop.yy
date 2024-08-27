@@ -8,8 +8,8 @@
   "name":"obj_vaso_drop",
   "overriddenProperties":[],
   "parent":{
-    "name":"vasos",
-    "path":"folders/Objetos/coletaveis/vasos.yy",
+    "name":"c1",
+    "path":"folders/Objetos/coletaveis/c1.yy",
   },
   "parentObjectId":{
     "name":"obj_vaso_pai",
