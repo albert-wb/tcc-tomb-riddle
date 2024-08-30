@@ -42,13 +42,33 @@ function draw_lifebar() {
     draw_set_color(-1);
 }
 
-function draw_interface(){
-	draw_sprite(spr_roma,0,8,6);
+function draw_artefatos(){
+	draw_sprite(spr_artefato_1,0,8,6);
 
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(fnt_ui);
-	draw_text(35,15,string(global.roma));
+	draw_text(35,15,string(global.artefato_1));
+	draw_set_halign(-1);
+	draw_set_valign(-1);
+	draw_set_font(-1);
+	
+	draw_sprite(spr_artefato_2,0,8,18);
+
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_font(fnt_ui);
+	draw_text(35,30,string(global.artefato_2));
+	draw_set_halign(-1);
+	draw_set_valign(-1);
+	draw_set_font(-1);
+	
+	draw_sprite(spr_artefato_3,0,8,30);
+
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_font(fnt_ui);
+	draw_text(35,45,string(global.artefato_3));
 	draw_set_halign(-1);
 	draw_set_valign(-1);
 	draw_set_font(-1);

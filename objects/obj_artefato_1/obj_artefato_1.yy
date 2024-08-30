@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pickup_parent",
+  "%Name":"obj_artefato_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pickup_parent",
+  "name":"obj_artefato_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"coletaveis",
-    "path":"folders/Objetos/coletaveis.yy",
+    "name":"capitulo 2",
+    "path":"folders/Objetos/mechanics/capitulo 2.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_artefato_pai",
+    "path":"objects/obj_artefato_pai/obj_artefato_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_artefato_1",
+    "path":"sprites/spr_artefato_1/spr_artefato_1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

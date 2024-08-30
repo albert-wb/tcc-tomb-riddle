@@ -1,4 +1,3 @@
-global.roma++;
 if (obj_controlador_draw.life_hp >= 50){
 	obj_controlador_draw.life_hp = 50;
 	show_debug_message("a vida já está máxima: " + string(obj_controlador_draw.life_hp));

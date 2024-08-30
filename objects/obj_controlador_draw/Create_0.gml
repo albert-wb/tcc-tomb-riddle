@@ -17,4 +17,5 @@ color_3 = make_color_rgb(19, 19, 19); // Cor da borda da barra de vida (preto)
 color_4 = c_white; // Cor do feedback (branco)
 
 draw_vida = draw_lifebar;
-interface = draw_interface;
+
+pode_draw_artefatos = false;
