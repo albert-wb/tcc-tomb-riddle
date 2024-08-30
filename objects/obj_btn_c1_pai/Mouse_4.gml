@@ -3,7 +3,7 @@ global.soma_next_room += soma_c1; // Adiciona o valor de soma_c1 à soma global 
 estado_alavanca = true;
 
 // Verifica se a soma é igual a um dos valores esperados
-if (global.soma_next_room == 24) { // Se a soma global for menor igual a 25
+if (global.soma_next_room == 24) { // Se a soma global for igual a 25
    
 	var _proximaFase = instance_create_layer(3184, 256, "colisao", obj_next_room); // Cria uma nova instância do objeto obj_next_room na camada "colisao" nas coordenadas (736, 320)
     with (_proximaFase) { // Acessa a instância criada de obj_next_room
