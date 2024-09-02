@@ -36,6 +36,7 @@ function draw_lifebar() {
 		//cria a instancia do jogador morrendo
 		instance_destroy(obj_player);
 		room_restart();
+		global.NumQuestion = 1;
     }
 
     // Restaura a cor de desenho padrão
