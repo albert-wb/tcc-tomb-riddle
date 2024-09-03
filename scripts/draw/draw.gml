@@ -44,7 +44,7 @@ function draw_lifebar() {
 }
 
 function draw_artefatos(){
-	draw_sprite(spr_artefato_1,0,8,6);
+	draw_sprite(spr_artefato_1,0,8,8);
 
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
@@ -54,22 +54,32 @@ function draw_artefatos(){
 	draw_set_valign(-1);
 	draw_set_font(-1);
 	
-	draw_sprite(spr_artefato_2,0,8,18);
+	draw_sprite(spr_artefato_2,0,8,27);
 
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(fnt_ui);
-	draw_text(35,30,string(global.artefato_2));
+	draw_text(35,32,string(global.artefato_2));
 	draw_set_halign(-1);
 	draw_set_valign(-1);
 	draw_set_font(-1);
 	
-	draw_sprite(spr_artefato_3,0,8,30);
+	draw_sprite(spr_artefato_3,0,8,46);
 
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(fnt_ui);
-	draw_text(35,45,string(global.artefato_3));
+	draw_text(35,52,string(global.artefato_3));
+	draw_set_halign(-1);
+	draw_set_valign(-1);
+	draw_set_font(-1);
+	
+	draw_sprite(spr_artefato_4,0,8,67);
+
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_font(fnt_ui);
+	draw_text(35,73,string(global.artefato_4));
 	draw_set_halign(-1);
 	draw_set_valign(-1);
 	draw_set_font(-1);

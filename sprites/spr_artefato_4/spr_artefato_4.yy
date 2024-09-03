@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_artefato_4",
   "bboxMode":0,
-  "bbox_bottom":31,
+  "bbox_bottom":15,
   "bbox_left":0,
-  "bbox_right":31,
+  "bbox_right":15,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0bd58e55-4dca-49c7-b25c-900476e908fc","name":"0bd58e55-4dca-49c7-b25c-900476e908fc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1fe28e0a-3b46-42cf-8d90-12925c7ea1f4","name":"1fe28e0a-3b46-42cf-8d90-12925c7ea1f4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"aeb2b0f6-518c-4e8b-9696-83520814c35b","blendMode":0,"displayName":"default","isLocked":false,"name":"aeb2b0f6-518c-4e8b-9696-83520814c35b","opacity":49.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"20462f31-f5c6-47bf-ab2e-9827a3b9150c","blendMode":0,"displayName":"default","isLocked":false,"name":"20462f31-f5c6-47bf-ab2e-9827a3b9150c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_artefato_4",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"fase 2",
-    "path":"folders/Sprites/mecanicas/fase 2.yy",
+    "name":"capitulo 2",
+    "path":"folders/Sprites/mecanicas/capitulo 2.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0bd58e55-4dca-49c7-b25c-900476e908fc","path":"sprites/spr_artefato_4/spr_artefato_4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"06f73517-3e37-4a80-b884-94264235df90","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fe28e0a-3b46-42cf-8d90-12925c7ea1f4","path":"sprites/spr_artefato_4/spr_artefato_4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7e2b78d1-a908-4794-bd3e-ec82661e7139","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":16,
 }

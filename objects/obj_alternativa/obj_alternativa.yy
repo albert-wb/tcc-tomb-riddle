@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_RespCerta",
-    "path":"sprites/spr_RespCerta/spr_RespCerta.yy",
+    "name":"spr_btn_c2",
+    "path":"sprites/spr_btn_c2/spr_btn_c2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

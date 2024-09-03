@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"fase 2",
-    "path":"folders/Sprites/mecanicas/fase 2.yy",
+    "name":"capitulo 2",
+    "path":"folders/Sprites/mecanicas/capitulo 2.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
