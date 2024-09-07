@@ -1,11 +1,11 @@
 event_inherited();
 
+alpha = approach(alpha,0,0.05);
+
 global.coord_jogador_x = x;
 global.coord_jogador_y = y;
 
 state();
-
-alpha = approach(alpha,0,0.05);
 
 //empurrando blocos
 

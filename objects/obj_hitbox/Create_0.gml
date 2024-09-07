@@ -26,6 +26,8 @@ if(c > 0){
             // Dentro deste bloco, você pode acessar diretamente as variáveis do "alvo"
             with(alvo){
                 life -= 5;
+				show_debug_message("5 de dano ao inimigo");
+				show_debug_message("Enemy hit flash - ativado");
             }
         }
     }
