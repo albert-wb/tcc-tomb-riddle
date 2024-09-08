@@ -141,7 +141,6 @@
     {"id":{"name":"papiro_vazio","path":"sprites/papiro_vazio/papiro_vazio.yy",},},
     {"id":{"name":"papiross","path":"sprites/papiross/papiross.yy",},},
     {"id":{"name":"prox_nvl","path":"sprites/prox_nvl/prox_nvl.yy",},},
-    {"id":{"name":"soma","path":"sprites/soma/soma.yy",},},
     {"id":{"name":"spr_artefato_1","path":"sprites/spr_artefato_1/spr_artefato_1.yy",},},
     {"id":{"name":"spr_artefato_2","path":"sprites/spr_artefato_2/spr_artefato_2.yy",},},
     {"id":{"name":"spr_artefato_3","path":"sprites/spr_artefato_3/spr_artefato_3.yy",},},
@@ -177,6 +176,7 @@
     {"id":{"name":"spr_roma","path":"sprites/spr_roma/spr_roma.yy",},},
     {"id":{"name":"spr_slope_left","path":"sprites/spr_slope_left/spr_slope_left.yy",},},
     {"id":{"name":"spr_slope_right","path":"sprites/spr_slope_right/spr_slope_right.yy",},},
+    {"id":{"name":"spr_soma","path":"sprites/spr_soma/spr_soma.yy",},},
     {"id":{"name":"spr_wall_move","path":"sprites/spr_wall_move/spr_wall_move.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"Sprite56","path":"sprites/Sprite56/Sprite56.yy",},},
@@ -193,10 +193,10 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"capitulo_01","path":"rooms/capitulo_01/capitulo_01.yy",},},
-    {"roomId":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},},
-    {"roomId":{"name":"capitulo_02_quis","path":"rooms/capitulo_02_quis/capitulo_02_quis.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"rm_cutscenes","path":"rooms/rm_cutscenes/rm_cutscenes.yy",},},
+    {"roomId":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},},
+    {"roomId":{"name":"capitulo_02_quis","path":"rooms/capitulo_02_quis/capitulo_02_quis.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

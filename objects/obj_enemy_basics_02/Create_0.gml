@@ -1,6 +1,6 @@
 event_inherited();
 
-move_spd = 1.2;
+move_spd = 1;
 move_dir = 1;
 
 atk_dir = 0;

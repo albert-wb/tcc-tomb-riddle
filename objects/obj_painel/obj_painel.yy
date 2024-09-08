@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"soma",
-    "path":"sprites/soma/soma.yy",
+    "name":"spr_soma",
+    "path":"sprites/spr_soma/spr_soma.yy",
   },
   "spriteMaskId":null,
   "visible":true,

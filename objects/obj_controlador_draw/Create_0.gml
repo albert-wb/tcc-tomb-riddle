@@ -19,3 +19,4 @@ color_4 = c_white; // Cor do feedback (branco)
 draw_vida = draw_lifebar;
 
 pode_draw_artefatos = false;
+pode_draw_soma_c1 = false;
