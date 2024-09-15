@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"parede_hieroglifos",
-  "out_columns":5,
+  "out_columns":12,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -17,7 +17,10 @@
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
-  "spriteId":null,
+  "spriteId":{
+    "name":"hieroglifos",
+    "path":"sprites/hieroglifos/hieroglifos.yy",
+  },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
@@ -25,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":24,
+  "tileHeight":50,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":24,
+  "tileWidth":53,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":24,
+  "tile_count":132,
 }
