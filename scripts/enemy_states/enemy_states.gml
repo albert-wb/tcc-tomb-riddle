@@ -17,7 +17,7 @@ function state_walk(){
 		move_dir*=-1;
 	}
 	
-	// Verifica se há colisão com entidades
+	// Verifica se há colisão com hitbox
 	var collision_e = instance_place(x + hspd, y, obj_hitbox);
 	
 	// Se houver colisão
