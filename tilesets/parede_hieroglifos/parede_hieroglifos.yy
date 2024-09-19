@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"parede_hieroglifos",
-  "out_columns":12,
+  "out_columns":24,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":50,
+  "tileHeight":25,
   "tilehsep":0,
   "tilevsep":0,
-  "tileWidth":53,
+  "tileWidth":25,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":132,
+  "tile_count":576,
 }

@@ -1,0 +1,1 @@
+show_debug_message("Está na cena de cutscene");

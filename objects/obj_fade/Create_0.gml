@@ -4,12 +4,22 @@ width = display_get_gui_width();
 height = display_get_gui_height();
 
 duration = 30;
-if (instance_exists(obj_next_room)){
-	targetroom = obj_next_room.next_lvl;
-} else if(instance_exists(obj_cutscene_controller)) {
-	targetroom = capitulo_01;
-} else {
-	targetroom = rm_cutscenes;
+
+targetroom = rm_cutscenes;
+
+if(instance_exists(obj_cutscene_controller)) {
+	
+	if (obj_cutscene_controller.rm_cut == 1){
+		targetroom = capitulo_01;
+		global.rm_cut_value = 2;
+	} else if (obj_cutscene_controller.rm_cut == 2){
+		targetroom = capitulo_02;
+		global.rm_cut_value = 3;
+	} else if (obj_cutscene_controller.rm_cut == 3){
+		//targetroom = capitulo_03;
+		//global.rm_cut_value = valor do proximo nivel;
+	}
+	
 }
 
 color = c_black;

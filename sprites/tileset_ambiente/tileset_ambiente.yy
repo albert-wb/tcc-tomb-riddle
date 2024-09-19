@@ -19,7 +19,7 @@
   "height":160,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"bb0e71fe-00e0-42af-b34b-547083aedd7f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"bb0e71fe-00e0-42af-b34b-547083aedd7f","opacity":40.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bb0e71fe-00e0-42af-b34b-547083aedd7f","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"bb0e71fe-00e0-42af-b34b-547083aedd7f","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"e314ebe5-55d2-4365-991d-1597ccca1421","blendMode":0,"displayName":"default","isLocked":false,"name":"e314ebe5-55d2-4365-991d-1597ccca1421","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"tileset_ambiente",

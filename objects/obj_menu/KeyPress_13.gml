@@ -1,5 +1,5 @@
 if(index==0){
-	room_goto_next();
+	//room_goto_next();
 }else if(index==1){
 	//load
 }else if(index == 2){
