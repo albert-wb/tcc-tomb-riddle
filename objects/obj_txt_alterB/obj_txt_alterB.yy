@@ -26,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"_TextAlternativa","filters":[],"listItems":[],"multiselect":false,"name":"_TextAlternativa","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"B1","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"_TextAlternativa","filters":[],"listItems":[],"multiselect":false,"name":"_TextAlternativa","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"B) Representação do deus egípcio \\ndo movimento do Sol, Khepri, e \\nsimbolização de ressurreição e nova vida","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"_NumAlternativa","filters":[],"listItems":[],"multiselect":false,"name":"_NumAlternativa","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
   ],
   "resourceType":"GMObject",

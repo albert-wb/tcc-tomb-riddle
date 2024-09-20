@@ -6,8 +6,8 @@
   "name":"obj_tocha",
   "overriddenProperties":[],
   "parent":{
-    "name":"sólidos",
-    "path":"folders/Objetos/sólidos.yy",
+    "name":"enfeites",
+    "path":"folders/Objetos/enfeites.yy",
   },
   "parentObjectId":null,
   "persistent":false,

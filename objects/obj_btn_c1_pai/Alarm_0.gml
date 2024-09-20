@@ -2,10 +2,6 @@
 with (obj_btn_c1_pai) { // Itera sobre todas as instâncias do objeto pai dos botões
         estado_alavanca = false; // Altera o sprite do botão para amarelo
     }
-	
-if(instance_exists(obj_next_room)){ //verifica se o obj_next_room existe ou foi criado
-		instance_destroy(obj_next_room); //destrói ele
-	}
 
 global.soma_next_room = 0; // Reseta a soma global para 0
 show_debug_message("Passagem destruída \nSoma resetada \nEstado da alavanca resetado");
