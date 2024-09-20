@@ -34,6 +34,7 @@ function draw_lifebar() {
     } else {
         // Se a vida do jogador for menor ou igual a zero, destrói a instância do jogador
 		//cria a instancia do jogador morrendo
+		show_debug_message("room atual:" + string(room));
 		instance_destroy(obj_player);
 		instance_create_layer(0, 0, "Instances", obj_fade_dead);
 		global.NumQuestion = 1;

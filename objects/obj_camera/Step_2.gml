@@ -12,6 +12,6 @@ if(instance_exists(global.view_target)){
 	var n_x = lerp(c_x,x_to,VIEW_SPD);
 	var n_y = lerp(c_y,y_to,VIEW_SPD);
 	
-	camera_set_view_pos(view_camera[VIEW],n_x,n_y);
+	camera_set_view_pos(view_camera[VIEW],n_x,n_y-3.5);
 	
 }

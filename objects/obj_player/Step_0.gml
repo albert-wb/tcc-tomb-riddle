@@ -26,6 +26,8 @@ if (is_block_h){
 	}
 }
 
+global.room_morte = room;
+
 if (estado_morte == true){ //vou usar na morte obrigatoria
 	instance_create_layer(x,y,"Instances", obj_player_morto);
 	obj_player_morto.estado_m = true;
