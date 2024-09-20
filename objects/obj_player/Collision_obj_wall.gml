@@ -1,2 +1,2 @@
 //criar instancia do jogador morrendo
-instance_destroy();
+obj_controlador_draw.life_hp = 0;

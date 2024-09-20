@@ -10,8 +10,8 @@
   "name":"obj_fade",
   "overriddenProperties":[],
   "parent":{
-    "name":"interface",
-    "path":"folders/Objetos/interface.yy",
+    "name":"fades",
+    "path":"folders/Objetos/interface/menu/fades.yy",
   },
   "parentObjectId":null,
   "persistent":true,

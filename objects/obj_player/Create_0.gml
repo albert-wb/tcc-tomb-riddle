@@ -29,4 +29,6 @@ damage_dir = 0;
 damage_time = 0;
 damage_distance = 10;
 
+estado_morte = false;
+
 state = player_state_free;

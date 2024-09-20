@@ -26,4 +26,10 @@ if (is_block_h){
 	}
 }
 
+if (estado_morte == true){ //vou usar na morte obrigatoria
+	instance_create_layer(x,y,"Instances", obj_player_morto);
+	obj_player_morto.estado_m = true;
+	instance_deactivate_object(obj_player);
+}
+
 ds_list_destroy(push_list);

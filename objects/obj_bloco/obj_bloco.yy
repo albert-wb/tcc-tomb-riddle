@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"caixa1",
+    "path":"sprites/caixa1/caixa1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
