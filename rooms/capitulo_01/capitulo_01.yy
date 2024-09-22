@@ -699,7 +699,7 @@
           -7,0,-212,-2147483648,-7,0,-212,-2147483648,-7,0,-3473,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ambiente_tl","path":"tilesets/ambiente_tl/ambiente_tl.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"background_fundo","depth":1400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"background_fundo","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":40,"SerialiseWidth":219,"TileCompressedData":[
-          -47,133,-22,103,-12,133,-16,103,-107,133,-15,103,-47,133,-33,103,1,0,-16,103,-38,133,1,103,-68,133,-15,
+          -47,133,-22,103,-12,133,-25,103,-6,133,-107,103,-47,133,-33,103,1,0,-16,103,-38,133,1,103,-68,133,-15,
           103,-47,133,-50,103,-38,133,1,103,-68,133,-15,103,-47,133,-42,103,-46,133,1,103,-68,133,-15,103,-47,
           133,-38,103,1,0,-49,133,1,103,-68,133,-15,103,-47,133,-36,103,-3,0,-32,133,-16,103,2,133,103,-68,133,
           -21,103,-41,133,-35,103,-36,133,-16,103,2,133,103,-68,133,-15,103,1,133,-3,103,-43,133,-35,103,-53,133,

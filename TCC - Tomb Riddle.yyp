@@ -252,9 +252,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},},
-    {"roomId":{"name":"capitulo_02_quis","path":"rooms/capitulo_02_quis/capitulo_02_quis.yy",},},
     {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"roomId":{"name":"capitulo_01","path":"rooms/capitulo_01/capitulo_01.yy",},},
+    {"roomId":{"name":"capitulo_02_quis","path":"rooms/capitulo_02_quis/capitulo_02_quis.yy",},},
     {"roomId":{"name":"rm_cutscenes","path":"rooms/rm_cutscenes/rm_cutscenes.yy",},},
     {"roomId":{"name":"rm_GameOver","path":"rooms/rm_GameOver/rm_GameOver.yy",},},
   ],
