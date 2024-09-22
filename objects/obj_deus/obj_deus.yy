@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"deusRa",
-    "path":"sprites/deusRa/deusRa.yy",
+    "name":"horus",
+    "path":"sprites/horus/horus.yy",
   },
   "spriteMaskId":null,
   "visible":true,

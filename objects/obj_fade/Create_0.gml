@@ -16,8 +16,8 @@ if(instance_exists(obj_cutscene_controller)) {
 		targetroom = capitulo_02;
 		global.rm_cut_value = 3;
 	} else if (obj_cutscene_controller.rm_cut == 3){
-		//targetroom = capitulo_03;
-		//global.rm_cut_value = valor do proximo nivel;
+		targetroom = capitulo_02_quis;
+		global.rm_cut_value = 3; //vai comecar as cutscenes antes de entrar na sala de quis
 	}
 	
 }
