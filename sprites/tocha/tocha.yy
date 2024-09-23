@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"assets_sprites",
-    "path":"folders/Sprites/assets_sprites.yy",
+    "name":"enfeite",
+    "path":"folders/Sprites/assets_sprites/enfeite.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

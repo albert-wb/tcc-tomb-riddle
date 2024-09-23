@@ -11,8 +11,8 @@
   "name":"obj_next_room",
   "overriddenProperties":[],
   "parent":{
-    "name":"mechanics",
-    "path":"folders/Objetos/mechanics.yy",
+    "name":"gerais",
+    "path":"folders/Objetos/mechanics/gerais.yy",
   },
   "parentObjectId":null,
   "persistent":false,

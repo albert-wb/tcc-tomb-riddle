@@ -9,8 +9,8 @@
   "name":"obj_spike",
   "overriddenProperties":[],
   "parent":{
-    "name":"mechanics",
-    "path":"folders/Objetos/mechanics.yy",
+    "name":"gerais",
+    "path":"folders/Objetos/mechanics/gerais.yy",
   },
   "parentObjectId":null,
   "persistent":false,
