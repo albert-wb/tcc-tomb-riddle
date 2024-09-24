@@ -1,0 +1,1 @@
+instance_create_layer(x+20, y,"colisao",obj_olho);

@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"assets_sprites",
-    "path":"folders/Sprites/assets_sprites.yy",
+    "name":"capitulo 3",
+    "path":"folders/Sprites/mecanicas/capitulo 3.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

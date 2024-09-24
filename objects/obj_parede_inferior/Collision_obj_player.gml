@@ -1,0 +1,1 @@
+obj_controlador_draw.life_hp-=1000;

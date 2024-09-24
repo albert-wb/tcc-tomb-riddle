@@ -1,27 +1,27 @@
 {
   "$GMSprite":"",
-  "%Name":"logo_tomb_riddle_mapa",
+  "%Name":"spr_parede_superior",
   "bboxMode":0,
-  "bbox_bottom":39,
-  "bbox_left":6,
-  "bbox_right":38,
-  "bbox_top":9,
+  "bbox_bottom":111,
+  "bbox_left":0,
+  "bbox_right":2239,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7e0831ec-db71-4b16-a823-9a27274f82eb","name":"7e0831ec-db71-4b16-a823-9a27274f82eb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a597b903-cb95-4899-a071-fe1b9c8555a2","name":"a597b903-cb95-4899-a071-fe1b9c8555a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":48,
+  "height":112,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"55ddadaf-7e99-470c-8d38-c75add85ca4c","blendMode":0,"displayName":"default","isLocked":false,"name":"55ddadaf-7e99-470c-8d38-c75add85ca4c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b8208e7a-d900-4109-8446-b3c42f36d849","blendMode":0,"displayName":"default","isLocked":false,"name":"b8208e7a-d900-4109-8446-b3c42f36d849","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"logo_tomb_riddle_mapa",
+  "name":"spr_parede_superior",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"logo_tomb_riddle_mapa",
+    "%Name":"spr_parede_superior",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"logo_tomb_riddle_mapa",
+    "name":"spr_parede_superior",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7e0831ec-db71-4b16-a823-9a27274f82eb","path":"sprites/logo_tomb_riddle_mapa/logo_tomb_riddle_mapa.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4ca3b89f-edf3-4db6-a7f6-709cd57662e0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a597b903-cb95-4899-a071-fe1b9c8555a2","path":"sprites/spr_parede_superior/spr_parede_superior.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"da3b0569-00ea-42bf-954e-c7f61f3a79b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":48,
+  "width":2240,
 }

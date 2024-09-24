@@ -4,10 +4,7 @@ repeat(abs(vspd)){ // Itera o número de pixels que a entidade deve se mover ver
     // se a queda for permitida a parede se move.
     if(queda_on == false or place_meeting(x, y + sign(vspd), obj_parede_inferior)){
         vspd = 0; // Se houver colisão, zera a velocidade vertical
-		obj_camera_c03.random = 0;
-		if (instance_exists(obj_player)){
-			instance_destroy(obj_player);
-		}
+		obj_camera.random = 0;
         break; // Sai do loop de movimentação vertical
 		
     } else {
