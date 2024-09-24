@@ -7,7 +7,11 @@ function player_state_free(){
 
 	// Calcula se há movimento horizontal
 	var move = key_right - key_left != 0; // Verifica se o jogador está se movendo para a esquerda ou direita
-
+	// Verifica se o jogador está no chão ou próximo a uma parede
+	var ground = place_meeting(x, y + 1, obj_wall); // Verifica colisão com o chão
+	var wall = place_meeting(x + 1, y, obj_wall) || place_meeting(x - 1, y, obj_wall); // Verifica colisão com paredes
+	
+	
 	// Se houver movimento horizontal
 	if(move){
 		// Define o sprite de caminhada
@@ -16,6 +20,23 @@ function player_state_free(){
 		move_dir = point_direction(0, 0, key_right - key_left, 0); // Calcula a direção do movimento
 		// Aumenta a velocidade de movimento até o máximo, usando aceleração
 		move_spd = approach(move_spd, move_spd_max, acc); // Acelera o movimento
+		
+		if (move_dir != previous_move_dir && ground) {
+            // Cria uma instância do objeto de fumaça
+            var instance_smoke_direction = instance_create_depth(obj_player.x, obj_player.y, 0, obj_smoke_dir);
+
+            // Configura o alarme da instância de fumaça para destruí-la após segundo
+            instance_smoke_direction.alarm[0] = 15;
+		
+            if (move_dir < 180) {
+                instance_smoke_direction.image_xscale = 1; // Mantém a escala normal
+            } else {
+                instance_smoke_direction.image_xscale = -1; // Inverte a escala horizontal
+            }
+        }
+
+        // Armazena a direção do movimento atual para comparar com a próxima atualização
+        previous_move_dir = move_dir;
 	}else{
 		// Define o sprite de inatividade
 		sprite_index = spr_player_idle; // Sprite parado
@@ -33,10 +54,8 @@ function player_state_free(){
 	
 	// Reduz a habilidade de movimento ao longo do tempo
 	can_move = approach(can_move, 0, .4); // Diminui a capacidade de movimento
-
-	// Verifica se o jogador está no chão ou próximo a uma parede
-	var ground = place_meeting(x, y + 1, obj_wall); // Verifica colisão com o chão
-	var wall = place_meeting(x + 1, y, obj_wall) || place_meeting(x - 1, y, obj_wall); // Verifica colisão com paredes
+	
+	
 
 	// Se o jogador está no chão
 	if(ground){
@@ -102,6 +121,7 @@ function player_state_free(){
 	
 	// Verifica se o botão esquerdo do mouse está pressionado
 	if (mouse_check_button(mb_left)){
+		audio_play_sound(snd_attack_01,0,false, 0.2);
 		attack_count += 1; // Incrementa o contador de ataques
 		show_debug_message("sequência de ataque: " + string(attack_count)); // Exibe o contador de ataques no console de depuração
 		// Ajusta a escala do sprite com base na posição do mouse

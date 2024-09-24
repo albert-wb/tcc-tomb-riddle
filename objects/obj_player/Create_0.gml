@@ -31,4 +31,6 @@ damage_distance = 10;
 
 estado_morte = false;
 
+previous_move_dir = -1;
+
 state = player_state_free;
