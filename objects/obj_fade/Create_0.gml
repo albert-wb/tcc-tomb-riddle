@@ -17,17 +17,14 @@ if(instance_exists(obj_cutscene_controller)) {
 		global.rm_cut_value = 3;
 	} else if (obj_cutscene_controller.rm_cut == 3){ // sala da pergunta 1
 		targetroom = capitulo_02_quis;
-		global.rm_cut_value = 4; //vai comecar as cutscenes antes de entrar na sala de quis
-	} else if (obj_cutscene_controller.rm_cut == 4){ // sala da pergunta 2
-		targetroom = capitulo_02_quis_1;
 		global.rm_cut_value = 5; //vai comecar as cutscenes antes de entrar na sala de quis
 	} else if (obj_cutscene_controller.rm_cut == 5){ // sala da pergunta 3
-		targetroom = capitulo_02_quis_2;
-		global.rm_cut_value = 6; //vai comecar as cutscenes antes de entrar na sala de quis
-	} else if (obj_cutscene_controller.rm_cut == 5){ // capitulo 3
 		targetroom = capitulo_03;
-		//global.rm_cut_value = 6; //vai comecar as cutscenes antes de entrar na sala de quis
-	}
+		global.rm_cut_value = 6; //vai comecar as cutscenes antes de entrar na sala de quis
+	} else if (obj_cutscene_controller.rm_cut == 6){ // sala da pergunta 3
+		targetroom = rm_menu;
+		global.rm_cut_value = 1; //vai comecar as cutscenes antes de entrar na sala de quis
+	} 
 	
 }
 

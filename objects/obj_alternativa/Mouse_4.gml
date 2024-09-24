@@ -20,7 +20,7 @@ if (global.NumQuestion == 1 and _RespCerta == 1){
 	_RespCerta = 0;
 	show_debug_message("Resposta certa 3");
 	
-	obj_next_room_quis.next_room_activate = true;
+	obj_next_room.next_room_activate = true;
 	
 } else {
 	

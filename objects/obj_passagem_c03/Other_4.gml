@@ -1,0 +1,2 @@
+instance_deactivate_object(obj_passagem_c03);
+instance_deactivate_object(obj_passagem_c03_fundo);

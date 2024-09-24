@@ -14,10 +14,18 @@ if (rm_cut == 1){
 	
 } else if (rm_cut == 2){
 	
-	current_cutscene = 8; // define as cutscenes do cap 02
+	current_cutscene = 11; // comeca as cutscenes do cap 02
 	
 } else if (rm_cut == 3){
 	
-	current_cutscene = 16; // define as cutscenes do salao de quis
+	current_cutscene = 20; // define as cutscenes do salao de quis
+	
+} else if (rm_cut == 5){
+	
+	current_cutscene = 28; // define as cutscenes q inicia o c03
+	
+} else if (rm_cut == 6){
+	
+	current_cutscene = 36; // define as cutscenes que inicia o fim do jogo
 	
 }

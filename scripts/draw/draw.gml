@@ -36,7 +36,12 @@ function draw_lifebar() {
 		//cria a instancia do jogador morrendo
 		show_debug_message("room atual:" + string(room));
 		instance_destroy(obj_player);
-		instance_create_layer(0, 0, "Instances", obj_fade_dead);
+			if (obj_parede_inferior.queda_on == true){ //se estiver no C3 e ativar as paredes
+													//significa que ele pegou o olho e vai morrer pra entrar nas cutscenes
+				instance_create_layer(0, 0, "Instances", obj_fade); 
+			} else {
+				instance_create_layer(0, 0, "Instances", obj_fade_dead);
+			}
 		global.NumQuestion = 1;
     }
 

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"fades",
-    "path":"folders/Objetos/mechanics/capitulo 2/quis/fades.yy",
+    "path":"folders/Objetos/interface/fades.yy",
   },
   "parentObjectId":null,
   "persistent":true,
