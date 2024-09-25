@@ -10,3 +10,6 @@ atk_distance = 20;
 life = 10; //vida do inimigo
 
 state = state_walk;
+
+spr_IdleSt = spr_escorpion_iddle;
+spr_RunSt = spr_escorpion_run;

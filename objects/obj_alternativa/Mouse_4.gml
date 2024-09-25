@@ -5,6 +5,7 @@ if (global.NumQuestion == 1 and _RespCerta == 1){
 	show_debug_message("Resposta certa 1");
 	
 	obj_next_room_quis.next_room_activate = true;
+	instance_deactivate_object(obj_alternativa);
 	
 } else if (global.NumQuestion == 2 and _RespCerta == 2){
 	
@@ -13,6 +14,7 @@ if (global.NumQuestion == 1 and _RespCerta == 1){
 	show_debug_message("Resposta certa 2");
 	
 	obj_next_room_quis.next_room_activate = true;
+	instance_deactivate_object(obj_alternativa);
 	
 } else if (global.NumQuestion == 3 and _RespCerta == 3){
 	
@@ -21,6 +23,7 @@ if (global.NumQuestion == 1 and _RespCerta == 1){
 	show_debug_message("Resposta certa 3");
 	
 	obj_next_room.next_room_activate = true;
+	instance_deactivate_object(obj_alternativa);
 	
 } else {
 	
@@ -32,6 +35,7 @@ if (global.NumQuestion == 1 and _RespCerta == 1){
 
 
 y = ystart +4;
+audio_play_sound(snd_selection, 0, false, 1);
 alarm[0] = 10;
 
 show_debug_message("Questão" + string(global.NumQuestion))
