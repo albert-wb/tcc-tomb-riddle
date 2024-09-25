@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":0,
+  "compression":3,
   "conversionMode":0,
   "duration":0.092542,
   "name":"snd_walking",

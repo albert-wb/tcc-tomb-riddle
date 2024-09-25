@@ -4,6 +4,7 @@ function player_state_free(){
 	var key_right = keyboard_check(ord("D")); // Tecla direita
 	var key_up = keyboard_check_pressed(vk_space); // Tecla de pulo
 	var key_dash = keyboard_check_pressed(ord("Z")); // Tecla de dash
+	can_create_dash_smoke = true;
 
 	// Calcula se há movimento horizontal
 	var move = key_right - key_left != 0; // Verifica se o jogador está se movendo para a esquerda ou direita
@@ -75,6 +76,9 @@ function player_state_free(){
 
 	// Se a tecla de pulo é pressionada e o tempo de coyote é positivo
 	if(key_up and coyote_time > 0 || key_up and jump_count > 0){
+		var instance_smoke_jump = instance_create_depth(obj_player.x, obj_player.y, 0, obj_smoke_jump);
+		instance_smoke_jump.alarm[0] = 15;
+		
 		jump_count--; // Diminui o contador de pulos
 		// Reseta o tempo de coyote
 		coyote_time = 0; // Reseta o tempo de coyote
@@ -160,6 +164,26 @@ function player_state_damage(){
 }
 
 function player_state_dash(){
+	
+	// Verifica se uma instância de fumaça já foi criada durante o dash
+    if (can_create_dash_smoke) {
+        // Cria uma instância de fumaça apenas se ainda não tiver sido criada durante o dash
+        var instance_smoke_dash = instance_create_depth(x, y, 0, obj_smoke_dash);
+
+        // Configura o alarme da instância de fumaça para destruí-la após um segundo
+        instance_smoke_dash.alarm[0] = 15; // room_speed representa 1 segundo
+
+        // Definindo a escala da instância de fumaça com base na direção do movimento
+        if (move_dir < 180) {
+            instance_smoke_dash.image_xscale = 1; // Mantém a escala normal
+        } else {
+            instance_smoke_dash.image_xscale = -1; // Inverte a escala horizontal
+        }
+        
+        // Impede a criação de mais instâncias de fumaça durante o dash
+        can_create_dash_smoke = false;
+    }
+	
 	// Estado de dash
 	hspd = lengthdir_x(dash_force, move_dir); // Aplica a força do dash na direção do movimento
 	dash_time = approach(dash_time, dash_distance, 1); // Aumenta o tempo de dash até a distância máxima

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_door_opening",
+  "%Name":"snd_esmaga",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.792,
-  "name":"snd_door_opening",
+  "duration":0.984,
+  "name":"snd_esmaga",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_door_opening.mp3",
+  "soundFile":"snd_esmaga.mp3",
   "type":0,
   "volume":1.0,
 }

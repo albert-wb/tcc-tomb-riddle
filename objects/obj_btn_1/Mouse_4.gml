@@ -13,6 +13,7 @@ if (estado_alavanca == true && _correta = true){//alavanca certa - ativada
 // Verifica se a soma é igual a um dos valores esperados
 if (global.soma_next_room == 4) { // Se a soma global for igual a 24
 	obj_next_room.next_room_activate = true;
+	audio_play_sound(snd_door_opening,0,false, 0.3);
 	show_debug_message("Ativou a alavancas corretas, soma: " + string(global.soma_next_room));
 	show_debug_message("Pode passar pela porta");
 } else if (global.soma_next_room > 4){

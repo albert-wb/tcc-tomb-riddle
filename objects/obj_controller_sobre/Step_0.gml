@@ -18,6 +18,7 @@
 	            if (current_cutscene > 4) { // Mudar para a próxima fase depois da última cutscene
 					key_active = false;
 					alarm[0] = 60;
+					audio_stop_sound(snd_musica_ambiente);
 	            } else {
 	                fade_in = true; // Iniciar o fade in para a próxima cutscene
 	            }
