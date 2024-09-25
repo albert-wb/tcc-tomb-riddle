@@ -17,8 +17,8 @@
     "path":"folders/Objetos/entidades.yy",
   },
   "parentObjectId":{
-    "name":"obj_entities_pai",
-    "path":"objects/obj_entities_pai/obj_entities_pai.yy",
+    "name":"obj_enemy_pai",
+    "path":"objects/obj_enemy_pai/obj_enemy_pai.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

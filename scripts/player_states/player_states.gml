@@ -150,7 +150,7 @@ function player_state_free(){
 function player_state_damage(){
 	sprite_index = spr_player_idle; // Define o sprite de inatividade
 	hspd = lengthdir_x(4, damage_dir); // Aplica a velocidade na direção do dano
-	obj_entities_pai.alpha = 1;
+	obj_player.alpha = 1;
 	damage_time = approach(damage_time, damage_distance, 1); // Aumenta o tempo de dano até a distância máxima
 	
 	// Se o tempo de dano atingir a distância máxima

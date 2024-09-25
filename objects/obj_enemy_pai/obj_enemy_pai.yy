@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_basics_03",
+  "%Name":"obj_enemy_pai",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_enemy_basics_03",
+  "name":"obj_enemy_pai",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_RunSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_escorpion_run","path":"sprites/spr_escorpion_run/spr_escorpion_run.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_escorpion_run",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_entities_pai","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"propertyId":{"name":"spr_IdleSt","path":"objects/obj_entities_pai/obj_entities_pai.yy",},"resource":{"name":"spr_escorpion_iddle","path":"sprites/spr_escorpion_iddle/spr_escorpion_iddle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_escorpion_iddle",},
@@ -17,8 +19,8 @@
     "path":"folders/Objetos/entidades.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy_pai",
-    "path":"objects/obj_enemy_pai/obj_enemy_pai.yy",
+    "name":"obj_entities_pai",
+    "path":"objects/obj_entities_pai/obj_entities_pai.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -37,13 +39,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_blackescorpion_idle",
-    "path":"sprites/spr_blackescorpion_idle/spr_blackescorpion_idle.yy",
-  },
-  "spriteMaskId":{
-    "name":"spr_escorpion_mask",
-    "path":"sprites/spr_escorpion_mask/spr_escorpion_mask.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -35,6 +35,7 @@ function state_walk(){
 function enemy_state_damage(){
 	sprite_index = spr_IdleSt; // Define o sprite de inatividade
 	hspd = lengthdir_x(4, atk_dir); // Aplica a velocidade na direção do dano
+	alpha = 1;
 	
 	atk_time = approach(atk_time, atk_distance, 1); // Aumenta o tempo de dano até a distância máxima
 	
