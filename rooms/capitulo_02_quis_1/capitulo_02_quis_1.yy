@@ -62,11 +62,13 @@
     {"name":"inst_69A5E6BD_1","path":"rooms/capitulo_02_quis_1/capitulo_02_quis_1.yy",},
     {"name":"inst_716F5CEB_1","path":"rooms/capitulo_02_quis_1/capitulo_02_quis_1.yy",},
     {"name":"inst_17D6540D","path":"rooms/capitulo_02_quis_1/capitulo_02_quis_1.yy",},
+    {"name":"inst_646D4B56","path":"rooms/capitulo_02_quis_1/capitulo_02_quis_1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"ui","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_47BF0E5D_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47BF0E5D_1_1","objectId":{"name":"obj_controlador_draw","path":"objects/obj_controlador_draw/obj_controlador_draw.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_646D4B56","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_646D4B56","objectId":{"name":"obj_fundo","path":"objects/obj_fundo/obj_fundo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.75,"scaleY":6.5,"x":-112.0,"y":0.0,},
       ],"layers":[],"name":"ui","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"camera","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_4D816ED7_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D816ED7_1_1_1","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
