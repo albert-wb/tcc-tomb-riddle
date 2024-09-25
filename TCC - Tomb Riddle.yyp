@@ -396,8 +396,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"capitulo_01","path":"rooms/capitulo_01/capitulo_01.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"capitulo_01","path":"rooms/capitulo_01/capitulo_01.yy",},},
     {"roomId":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},},
     {"roomId":{"name":"capitulo_02_quis","path":"rooms/capitulo_02_quis/capitulo_02_quis.yy",},},
     {"roomId":{"name":"capitulo_02_quis_1","path":"rooms/capitulo_02_quis_1/capitulo_02_quis_1.yy",},},

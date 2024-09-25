@@ -17,7 +17,7 @@ if (rm_cut == 1){
 	            is_transitioning = false; // Finalizar a transição
 	            if (current_cutscene > 9) { // Mudar para a próxima fase depois da última cutscene
 					key_active = false;
-					alarm[0] = 60;
+					alarm[0] = 120;
 	            } else {
 	                fade_in = true; // Iniciar o fade in para a próxima cutscene
 	            }
