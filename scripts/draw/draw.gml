@@ -46,6 +46,7 @@ function draw_lifebar() {
 				global.artefato_2 = 0;
 				global.artefato_3 = 0;
 				global.artefato_4 = 0;
+				global.chave = 0;
 			}
 		global.NumQuestion = 1;
     }
@@ -110,6 +111,19 @@ function draw_soma_c1(){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_set_font(fnt_ui);
+	draw_set_halign(-1);
+	draw_set_valign(-1);
+	draw_set_font(-1);
+	
+}
+
+function draw_chave(){
+	draw_sprite(spr_chave_bau,0,8,8);
+
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_font(fnt_ui);
+	draw_text(35,40,string(global.chave));
 	draw_set_halign(-1);
 	draw_set_valign(-1);
 	draw_set_font(-1);

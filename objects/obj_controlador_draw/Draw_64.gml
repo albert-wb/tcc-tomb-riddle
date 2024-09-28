@@ -7,3 +7,7 @@ if (pode_draw_soma_c1 == true){
 	draw_soma_c1();
 }
 
+
+if (pode_draw_chave == true){
+	draw_chave();
+}

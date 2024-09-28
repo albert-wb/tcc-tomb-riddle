@@ -20,3 +20,4 @@ draw_vida = draw_lifebar;
 
 pode_draw_artefatos = false;
 pode_draw_soma_c1 = false;
+pode_draw_chave = false;
