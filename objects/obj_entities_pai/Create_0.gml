@@ -1,8 +1,8 @@
 hspd = 0;
 vspd = 0;
 vspd_min = -7;
-vspd_max = 6;
-grv = 0.2125;
+vspd_max = 4.5;
+grv = 0.2100;
 
 move_dir = 0;
 
