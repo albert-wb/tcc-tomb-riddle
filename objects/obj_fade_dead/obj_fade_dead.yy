@@ -28,7 +28,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"chapter","filters":[],"listItems":[],"multiselect":false,"name":"chapter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"capitulo_02","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"chapter","filters":[],"listItems":[],"multiselect":false,"name":"chapter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"capitulo_02","path":"rooms/capitulo_02/capitulo_02.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"capitulo_02","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
